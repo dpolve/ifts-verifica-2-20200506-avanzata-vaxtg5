@@ -2268,7 +2268,7 @@ export class DatiService {
     }
 ];
 
-  constructor(private http: HttpClient) {}
+  constructor() {}
 
 
   getDatiRegioni(): Regione[] {

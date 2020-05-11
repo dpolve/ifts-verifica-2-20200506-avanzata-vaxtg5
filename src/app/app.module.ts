@@ -9,6 +9,7 @@ import { TabellaRegioniComponent } from './tabella-regioni/tabella-regioni.compo
 import { TabellaProvinceComponent } from './tabella-province/tabella-province.component';
 import { DatiService } from './dati.service';
 import { HttpClientModule } from '@angular/common/http';
+import { SwapiService } from './swapi.service';
 
 @NgModule({
   imports:      [
@@ -23,6 +24,6 @@ import { HttpClientModule } from '@angular/common/http';
     TabellaProvinceComponent
   ],
   bootstrap:    [ AppComponent ],
-  providers: [DatiService]
+  providers: [DatiService, SwapiService]
 })
 export class AppModule { }
