@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Daniele Arduini</h1>
+  <h2>Dati monitoraggio epidemia Coronavirus</h2>
+
+  <button class="btn btn-primary m-2"
+    (click)="onRegioni()"
+    [disabled]="visualizzaRegioni"
+  >Regioni</button>
+  <button class="btn btn-primary m-2"
+    (click)="onProvince()"
+    [disabled]="visualizzaProvince"
+  >Province</button>
+
+  <app-tabella-regioni *ngIf="visualizzaRegioni"
+    [datiRegioni]="datiService.getDatiRegioni()"
+  ></app-tabella-regioni>
+
+  <app-tabella-province *ngIf="visualizzaProvince"
+    [datiProvince]="datiService.getDatiProvince()"
+  ></app-tabella-province>
+</div>

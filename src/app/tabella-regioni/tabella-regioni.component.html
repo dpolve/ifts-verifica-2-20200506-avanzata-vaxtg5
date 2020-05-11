@@ -1,0 +1,20 @@
+<table class="table table-striped">
+	<thead class="thead-dark">
+		<tr>
+			<th scope="col">Regione</th>
+			<th scope="col">Positivi</th>
+			<th scope="col">Guariti</th>
+			<th scope="col">Deceduti</th>
+			<th scope="col">Totale Casi</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let p of datiRegioni">
+			<th scope="row">{{p.denominazione_regione}}</th>
+			<td>{{p.totale_positivi}}</td>
+			<td>{{p.dimessi_guariti}}</td>
+			<td>{{p.deceduti}}</td>
+			<td>{{p.totale_casi}}</td>
+		</tr>
+	</tbody>
+</table>

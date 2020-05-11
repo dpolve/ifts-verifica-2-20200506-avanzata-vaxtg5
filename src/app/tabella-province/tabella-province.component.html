@@ -1,0 +1,16 @@
+<table class="table table-striped">
+	<thead class="thead-dark">
+		<tr>
+			<th scope="col">Regione</th>
+			<th scope="col">Provincia</th>
+			<th scope="col">Totale Casi</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let p of datiProvince">
+			<td>{{p.denominazione_regione}}</td>
+			<th scope="row">{{p.denominazione_provincia}}</th>
+			<td>{{p.totale_casi}}</td>
+		</tr>
+	</tbody>
+</table>
