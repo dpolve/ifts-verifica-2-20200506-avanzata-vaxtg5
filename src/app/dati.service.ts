@@ -1,5 +1,6 @@
 import { Injectable } from "@angular/core";
 import { Regione, Provincia } from "./dati.model";
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: "root"
@@ -2267,7 +2268,7 @@ export class DatiService {
     }
 ];
 
-  constructor() {}
+  constructor(private http: HttpClient) {}
 
 
   getDatiRegioni(): Regione[] {

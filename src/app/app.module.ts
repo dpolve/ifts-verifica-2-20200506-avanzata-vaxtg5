@@ -8,12 +8,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TabellaRegioniComponent } from './tabella-regioni/tabella-regioni.component';
 import { TabellaProvinceComponent } from './tabella-province/tabella-province.component';
 import { DatiService } from './dati.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports:      [
     BrowserModule,
     FormsModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   declarations: [
     AppComponent,
